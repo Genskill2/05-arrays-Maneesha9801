@@ -1,7 +1,7 @@
 /* Enter your solutions in this file */
 #include <stdio.h>
 int max( int a[], int b){
-  int check =0;
+  int check =a[0];
   for(int i=0;i<b;i++)
   {
     if(check<a[i]){
@@ -15,7 +15,7 @@ int max( int a[], int b){
 }
 
 int min ( int c[], int d){
-  int check1=0;
+  int check1=c[0];
   for(int j=0;j<d;j++)
   {
     if(c[i]< check1){
