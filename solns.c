@@ -13,12 +13,13 @@ int max( int a[], int b){
   }
   return check;
 }
+
 int min ( int c[], int d){
   int check1=0;
-  for(int i=0;i<d;i++)
+  for(int j=0;j<d;j++)
   {
-    if(check1>c[i]){
-      check1= c[i];
+    if(c[i]< check1){
+      check1= c[j];
     }
   }
   return check1;
