@@ -33,4 +33,37 @@ float average( int arr[],int n){
   float avg = sum/n;
   return avg;
 }
+
+/*int mode( int arr1[], int m){
+  int counts[50];
+  
+  for(int i=0;i<m;i++){
+    int counts =0;
+    for(int j=i;j<m;j++){
+      if(arr1[i]==arr[j]){
+        count++;
+        counts[i]= count;
+      }
+      for(int k =0;*/
+int mode(int ar[],int m) {
+   int maxValue = 0, maxCount = 0, i, j;
+
+   for (i = 0; i < m; ++i) {
+      int count = 0;
+      
+      for (j = 0; j < m; ++j) {
+         if (ar[j] == ar[i])
+         ++count;
+      }
+      
+      if (count > maxCount) {
+         maxCount = count;
+         maxValue = ar[i];
+      }
+   }
+
+   return maxValue;
+}
+      
+     
   
