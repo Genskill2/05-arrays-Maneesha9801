@@ -18,7 +18,7 @@ int min ( int c[], int d){
   int check1=c[0];
   for(int j=0;j<d;j++)
   {
-    if(c[i]< check1){
+    if(c[j]< check1){
       check1= c[j];
     }
   }
