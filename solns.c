@@ -25,4 +25,12 @@ int min ( int c[], int d){
   return check1;
 }
 
+float average( int arr[],int n){
+  int sum =0;
+  for(int k=0; k<n;k++){
+    sum= sum+arr[k];
+  }
+  float avg = sum/n;
+  retrun avg;
+}
   
