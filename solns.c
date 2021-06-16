@@ -7,9 +7,11 @@ int max( int a[], int b){
     if(check<a[i]){
       check=a[i];
       
+      
     }
     
   }
+  return check;
 }
 int min ( int c[], int d){
   int check1=0;
@@ -18,6 +20,7 @@ int min ( int c[], int d){
       check1= c[i];
     }
   }
+  return check1;
 }
 
   
