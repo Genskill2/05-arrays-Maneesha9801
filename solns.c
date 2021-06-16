@@ -31,6 +31,6 @@ float average( int arr[],int n){
     sum= sum+arr[k];
   }
   float avg = sum/n;
-  retrun avg;
+  return avg;
 }
   
