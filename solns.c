@@ -64,6 +64,65 @@ int mode(int ar[],int m) {
 
    return maxValue;
 }
+/*
+int factors( int fact, int f[]){
+  int a=0;
+  int c=0;
+  for(int i=2;i<=fact;i++){
+    if( fact%i==0){
+      c=1;
+      
+      for( int j =2;j<=i;j++){
+        if( i%j==0){
+          c=0;
+          break;
+        }
+        a++;
+      }
+      if(c==1){
+        for( int k =0; k<fact;k++){
+          f[k]=i;}
+      }
+    }*/
+
+    int factor( int fact, int f[]){
+      int i, j, num, isPrime;
+      k=0;
+
+    for(i=2; i<=fact; i++)
+    {
+        /* Check 'i' for factor of num */
+        if(fact%i==0)
+        {
+            /* Check 'i' for Prime */
+            isPrime = 1;
+            for(j=2; j<=i/2; j++)
+            {
+                if(i%j==0)
+                {
+                    isPrime = 0;
+                    break;
+                }
+            }
+
+            /* If 'i' is Prime number and factor of num */
+            if(isPrime==1)
+            {
+                printf("%d, ", i);
+              k++;
+              
+            }
+        }
+    }
+
+    return k;
+}
+          
+          
+         
+      
+      
+  
       
      
   
