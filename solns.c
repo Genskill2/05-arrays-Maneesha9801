@@ -87,7 +87,7 @@ int factors( int fact, int f[]){
 
     int factor( int fact, int f[]){
       int i, j, num, isPrime;
-      k=0;
+     int k=0;
 
     for(i=2; i<=fact; i++)
     {
