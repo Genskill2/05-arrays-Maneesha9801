@@ -85,17 +85,17 @@ int factors( int fact, int f[]){
       }
     }*/
 
-    int factor( int fact, int f[]){
+  /*  int factor( int fact, int f[]){
       int i, j, num, isPrime;
      int k=0;
 
     for(i=2; i<=fact; i++)
     {
         /* Check 'i' for factor of num */
-        if(fact%i==0)
+        /*if(fact%i==0)
         {
             /* Check 'i' for Prime */
-            isPrime = 1;
+         /*   isPrime = 1;
             for(j=2; j<=i/2; j++)
             {
                 if(i%j==0)
@@ -106,7 +106,7 @@ int factors( int fact, int f[]){
             }
 
             /* If 'i' is Prime number and factor of num */
-            if(isPrime==1)
+          /*  if(isPrime==1)
             {
                 printf("%d, ", i);
               k++;
@@ -116,7 +116,32 @@ int factors( int fact, int f[]){
     }
 
     return k;
+}*/
+int factors(int num, int prf[])
+{
+    int temp=num;
+    int i=0;
+    int pf[]={2,3,5,7,9,11,13,17,19};
+    int prno=(int)(sizeof(pf)/sizeof(int));
+    for(;temp!=1;i++)
+    {
+        for(int j=0;j<prno;j++)
+        {
+            if((temp%pf[j])==0)
+            {
+                prf[i]=pf[j];
+                temp/=pf[j];
+                break;
+            }
+            else
+            {
+                continue;
+            }
+        }
+    }
+    return i;
 }
+
           
           
          
